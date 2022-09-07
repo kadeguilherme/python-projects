@@ -40,7 +40,4 @@ def delete(id):
             db.remove(ong)
             return jsonify({'Usuário excluido': ong})
 
-
-
-
 app.run()
