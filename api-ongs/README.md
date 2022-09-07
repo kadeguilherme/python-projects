@@ -7,3 +7,20 @@ Este repositório tem por objetivo demostrar um exemplo de um service REST que p
 - **Insomnia**
 - **Virtualenv**
 
+
+## :information_source: Como usar
+```bash
+$ git clone https://github.com/kadeguilherme/Exercicios-de-Python.git
+```
+```bash
+$ cd api-ongs
+```
+Com Virtualenv instalado na sua máquina e dentro da pasta api-ongs.
+Rode o seguinte comando:
+
+```bash
+$ virtualenv env
+$ source env/bin/activate
+$ pip install -r requirements.txt
+$ python3 api.py
+```
