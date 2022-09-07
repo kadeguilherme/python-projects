@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify, request
 from models.ongs import ONGS, ONGSEncoder
 from database import db
 
@@ -20,10 +20,18 @@ def list(id):
     for ong in db:
         if ong.new_id == id:
             return jsonify(ong)
-        return '<h1> ONG não existe</h1>'
+    
+    return '<h1> ONG não existe</h1>'
 
 
-
+@app.route('/post/ong', methods=['POST'])
+def creat():
+    ong = ONGS(request.json['name'],
+                request.json['founder'],
+                request.json['sector']
+               )
+    db.append(ong)
+    return jsonify(ong)
 
 
 
