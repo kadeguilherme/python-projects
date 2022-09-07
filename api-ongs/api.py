@@ -24,7 +24,7 @@ def list(id):
     return '<h1> ONG não existe</h1>'
 
 
-@app.route('/post/ong', methods=['POST'])
+@app.route('/resorces/ong', methods=['POST'])
 def creat():
     ong = ONGS(request.json['name'],
                 request.json['founder'],
@@ -33,11 +33,21 @@ def creat():
     db.append(ong)
     return jsonify(ong)
 
+@app.route('/resorces/ong/<int:id>', methods=['PUT'])
+def put(id):
+    for ong in db:
+        if ong.new_id == id:
+            ong.name = request.json['name']
+            ong.founder = request.json['founder']
+            ong.sector = request.json['sector']
+            return jsonify({'ONG atualizado': ong})
+
+
 @app.route('/delete/ong/<int:id>', methods=['DELETE'])
 def delete(id):
     for ong in db:
         if ong.new_id == id:
             db.remove(ong)
-            return jsonify({'Usuário excluido': ong})
+            return jsonify({'ONG excluido': ong})
 
 app.run()
