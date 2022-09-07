@@ -33,6 +33,13 @@ def creat():
     db.append(ong)
     return jsonify(ong)
 
+@app.route('/delete/ong/<int:id>', methods=['DELETE'])
+def delete(id):
+    for ong in db:
+        if ong.new_id == id:
+            db.remove(ong)
+            return jsonify({'Usuário excluido': ong})
+
 
 
 
