@@ -2,8 +2,8 @@
 Este repositório tem por objetivo demostrar um exemplo de um service REST que permite consultar, inserir, alterar e remover (CRUD) ONGs. Para deixar o exemplo mais simples não vamos utilizar algum banco de dados.
 ## :rocket: Tecnologias
 - **Python 3.10.4**
-- **Flask 2.2.2**
-- **Werkzeug 2.2.2**
+- **Flask**
+- **Werkzeug**
 - **Insomnia**
 - **Virtualenv**
 
@@ -11,10 +11,9 @@ Este repositório tem por objetivo demostrar um exemplo de um service REST que p
 ## :information_source: Como usar
 ```bash
 $ git clone https://github.com/kadeguilherme/Exercicios-de-Python.git
-```
-```bash
 $ cd api-ongs
 ```
+
 Com Virtualenv instalado na sua máquina e dentro da pasta api-ongs.
 Rode o seguinte comando:
 

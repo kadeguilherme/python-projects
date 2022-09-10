@@ -40,7 +40,7 @@ def put(id):
             ong.name = request.json['name']
             ong.founder = request.json['founder']
             ong.sector = request.json['sector']
-            return jsonify({'ONG atualizado': ong})
+            return jsonify({'ONG atualizada': ong})
 
 
 @app.route('/delete/ong/<int:id>', methods=['DELETE'])
