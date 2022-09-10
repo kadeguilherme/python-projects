@@ -6,7 +6,7 @@
 </p>
 
 
-## Clone UI
+## Projetos
   *  <a aria-label="Google Landing Page" href="https://github.com/kadeguilherme/Exercicios-de-Python/tree/master/api-ongs">API ong</a>
 
 ## Feito com ❤
