@@ -2,7 +2,7 @@
 
 ## :page_facing_up: Sobre
  <p align="justify">
-  O Repositorio Python contendo coleção de projetos python para aprimorar minhas habilidades em python
+  O Repositorio Python contendo coleção de projetos python para aprimorar minhas habilidades.
 </p>
 
 
