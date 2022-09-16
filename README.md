@@ -8,6 +8,7 @@
 
 ## Projetos
   *  <a aria-label="Google Landing Page" href="https://github.com/kadeguilherme/Exercicios-de-Python/tree/master/api-ongs">API ong</a>
+  *  <a aria-label="Google Landing Page" href="https://github.com/kadeguilherme/python-projects/tree/master/projeto-oficina-mecanica">Projeto oficina mecanica</a>
 
 ## Feito com ❤
 
