@@ -14,11 +14,13 @@ db = mysql.connector.connect(
 
 cursor = db.cursor()
 
+sqlselect = ("SELECT * FROM ongs")
 sqlinsert = ("INSERT INTO ongs (founder,ongname,sector) VALUES (%s, %s, %s)") 
+sqldelete = ("SELECT * FROM ongs WHERE id = {}")
 
 @app.route("/query/ong", methods=['GET'])
 def get():
-    cursor.execute('SELECT * FROM ongs')
+    cursor.execute(sqlselect)
     ong = cursor.fetchall()
     return ong
 
@@ -30,5 +32,10 @@ def post():
     db.commit()
     return jsonify("Ong criada",ong)
 
-
+@app.route('/delete/ong/<int:id>', methods=['DELETE'])
+def delete(id):
+    cursor.execute(sqldelete.format(id))
+    ong = cursor.fetchall()
+    db.commit()
+    return jsonify("ONG deletada", ong)
 app.run()
