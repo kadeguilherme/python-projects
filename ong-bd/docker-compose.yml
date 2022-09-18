@@ -1,0 +1,15 @@
+version: '3.9'
+
+services:
+  db_ong:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'ONGS'
+      MYSQL_USER: 'MainUser'
+      MYSQL_PASSWORD: 'MainPassword'
+      MYSQL_ROOT_PASSWORD: 'RootPassword'
+    volumes:
+      - ./db:/docker-entrypoint-initdb.d
+    ports:
+      - "3306:3306"
