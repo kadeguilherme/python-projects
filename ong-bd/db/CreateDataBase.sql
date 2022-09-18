@@ -14,5 +14,5 @@ SET character_set_results = utf8;
 SET collation_connection = utf8_general_ci;
 
 
-INSERT INTO ongs (founder,ongname, sector) VALUES ("Assistencia Social", 'Rede Cidada', 'A Rede Cidada é uma Entidade de Assistencia Social.');
-INSERT INTO ongs (founder,ongname, sector) VALUES ("Cultura", 'CASA ARTE VIDA', "Desenvolvimento social local por meio de ações complementares à educação escolar");
+-- INSERT INTO ongs (founder,ongname, sector) VALUES ("Assistencia Social", 'Rede Cidada', 'A Rede Cidada é uma Entidade de Assistencia Social.');
+-- INSERT INTO ongs (founder,ongname, sector) VALUES ("Cultura", 'CASA ARTE VIDA', "Desenvolvimento social local por meio de ações complementares à educação escolar");
