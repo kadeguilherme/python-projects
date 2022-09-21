@@ -24,7 +24,7 @@ $ pip install -r requirements.txt
 $ python3 api.py
 ```
 ## Metodos GET, PUT, DELETE e POST
-<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/api-ongs/img/GET.png" alt="GET"/>
-<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/api-ongs/img/POST.png" alt="POST"/>
-<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/api-ongs/img/PUT.png" alt="PUT"/>
-<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/api-ongs/img/DELETE.png" alt="DELETE"/>
+<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/ong-without-bd/img/GET.png" alt="GET"/>
+<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/ong-without-bd/img/POST.png" alt="POST"/>
+<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/ong-without-bd/img/PUT.png" alt="PUT"/>
+<img src="https://github.com/kadeguilherme/Exercicios-de-Python/blob/master/ong-without-bd/img/DELETE.png" alt="DELETE"/>
