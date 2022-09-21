@@ -1,4 +1,4 @@
-.card-dashboard{
+.card-dashboard {
 
     background-color: var(--main-color);
     width: 50%;
@@ -6,16 +6,17 @@
     margin-top: 40px;
     text-align: center;
     padding: 20px;
+    cursor: pointer;
 
 }
 
-.text-card{
+.text-card {
 
     font-size: 25px;
 
 }
 
-.btn-add-carros{
+.btn-add-carros {
 
     background-color: var(--contrast-color);
     padding: 5px;
@@ -24,10 +25,20 @@
 
 }
 
-.btn-principal{
-    color:white;
+.btn-principal {
+    color: white;
     border: none;
     background-color: var(--dark-color);
     padding: 5px;
     font-size: 30px;
+}
+
+#att_cliente {
+
+    display: none;
+}
+
+#form-att-cliente {
+    display: none;
+
 }

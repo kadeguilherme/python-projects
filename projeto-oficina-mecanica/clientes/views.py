@@ -5,7 +5,8 @@ import re
 
 def clientes(request):
     if request.method == "GET":
-        return render(request, 'clientes.html')
+        cliente_list = Cliente.objects.all()
+        return render(request, 'clientes.html', {'clientes': cliente_list})
     elif request.method == "POST":
         nome = request.POST.get('nome')
         sobrenome = request.POST.get('sobrenome')
