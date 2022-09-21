@@ -46,5 +46,4 @@ def att_cliente(request):
     id_cliente = request.POST.get('id_cliente')
     cliente = Cliente.objects.filter(id=id_cliente)
     cliente_json = json.loads(serializers.serialize('json', cliente))[0]['fields']
-    print(cliente_json)
     return JsonResponse(cliente_json)
