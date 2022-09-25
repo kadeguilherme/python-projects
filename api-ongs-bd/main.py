@@ -30,7 +30,7 @@ def post():
     sql = ("INSERT INTO carros (marca, modelo, ano) VALUES (%s,%s , %s)")
     data_carro = (carro['marca'],carro['modelo'],carro['ano'])
     cursor.execute(sql, data_carro)
-    db.commit()
+            .commit()
     return jsonify(carro)
 
 
