@@ -54,6 +54,7 @@ function dados_cliente() {
         email.value = data['cliente']['email']
 
         div_carros = document.getElementById('carros')
+        div_carros.innerHTML = ""
 
         for (i = 0; i < data['carros'].length; i++) {
             console.log(data['carros'][i]['fields']['carro'])
@@ -67,7 +68,7 @@ function dados_cliente() {
                             <input class='form-control' name='placa' type='text' value='" + data['carros'][i]['fields']['placa'] + "'>\
                         </div>\
                         <div class='col-md'>\
-                            <input class='btn btn-lg btn-success' type='submit'>\
+                            <input class='btn btn-lg btn-success' value='Salvar' type='submit'>\
                         </div>\
                     </form>\
                     <div class='col-md'>\

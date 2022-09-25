@@ -4,6 +4,9 @@ from .models import Cliente, Carro
 import re
 from django.core import serializers
 import json
+from django.views.decorators.csrf import csrf_exempt
+from django.shortcuts import redirect
+from django.urls import reverse
 
 def clientes(request):
     if request.method == "GET":
@@ -54,3 +57,28 @@ def att_cliente(request):
 
     data = {'cliente':cliente_json, 'carros': carros_json }
     return JsonResponse(data)
+
+@csrf_exempt
+def update_carro(request, id):
+    nome_carro = request.POST.get('carro')
+    placa = request.POST.get('placa')
+    
+    carro = Carro.objects.get(id=id)
+    list_carros = Carro.objects.exclude(id=id).filter(placa=placa)
+
+    if list_carros.exists():
+        return HttpResponse('Placa ja existentes')
+    
+    carro.carro = nome_carro
+    carro.placa = placa
+    carro.save()
+
+    return HttpResponse(id)
+
+def excluir_carro(request, id):
+    try:
+        carro = Carro.objects.get(id=id)
+        carro.delete()
+        return redirect(reverse('clientes')+f'?aba=att_cliente&id_cliente={id}')
+    except:
+        return redirect(reverse('clientes')+f'?aba=att_cliente&id_cliente={id}')
